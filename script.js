@@ -84,7 +84,7 @@
 
 function showHide(id)
 {
-    document.getElementById(id).style.display = (document.getElementById(id).style.display == 'block' ? 'none' : 'block');
+    document.getElementById(id).style.display = (document.getElementById(id).style.display == 'grid' ? 'none' : 'grid');
 }
 
 function markInvalid(id, condition)
@@ -101,7 +101,7 @@ function generatePassword()
     var tid = parseInt(document.getElementById('tid').value);
     var money = parseInt(document.getElementById('money').value);
     var korean = (document.getElementById('kor').checked ? true : false);
-    
+
     var validName = isValidName(name, korean);
     var validTid = isValidTid(tid);
     var validAmountOfMoney = isValidAmountOfMoney(money);
@@ -109,7 +109,7 @@ function generatePassword()
     markInvalid("name", validName);
     markInvalid("tid", validTid);
     markInvalid("money", validAmountOfMoney);
-    
+
     if(validName && validTid && validAmountOfMoney)
         document.getElementById('password').innerHTML = getPassword(name, tid, money, korean);
     else
