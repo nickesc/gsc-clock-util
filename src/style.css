@@ -6,6 +6,7 @@
     --surface: #ffffff;
     --text-primary: #111827;
     --text-secondary: #6b7280;
+    --text-link: #2f5bb9;
     --border: #e5e7eb;
     --border-hover: #d1d5db;
     --radius: 8px;
@@ -22,6 +23,7 @@
     --surface: #2d2d2d;
     --text-primary: #f5f5f5;
     --text-secondary: #a0a0a0;
+    --text-link: #63a3fc;
     --border: #404040;
     --border-hover: #555555;
 }
@@ -35,6 +37,7 @@
         --surface: #2d2d2d;
         --text-primary: #f5f5f5;
         --text-secondary: #a0a0a0;
+        --text-link: #63a3fc;
         --border: #404040;
         --border-hover: #555555;
     }
@@ -70,6 +73,19 @@ header {
 
 h1, h2, h3, h4, h5, h6, button, kbd, samp {
     font-family: 'IBM Plex Mono', sans-serif;
+}
+
+a {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--text-link);
 }
 
 .header-content {
