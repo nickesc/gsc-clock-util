@@ -1,4 +1,4 @@
-# GSC Clock Password Generator
+# Pokémon GSC Clock Password Generator
 
 A web-based tool to generate passwords for resetting the real-time clock (RTC) in Gen II Pokémon games: *Pokémon Gold, Silver & Crystal*.
 

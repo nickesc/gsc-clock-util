@@ -67,7 +67,7 @@ body {
 header {
     background: var(--surface);
     color: var(--text-primary);
-    padding: calc(var(--spacing) * 1.5);
+    padding: calc(var(--spacing) * 1);
     border-bottom: 1px solid var(--border);
 }
 
@@ -101,7 +101,7 @@ a:visited {
 }
 
 header h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0;
@@ -116,7 +116,7 @@ th {
 }
 
 .instructions-toggle h3 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0;
@@ -275,7 +275,6 @@ main {
     opacity: 0.9;
 }
 
-/* Focus visible for keyboard navigation */
 .btn-generate:focus-visible,
 .input:focus-visible,
 .instructions-toggle:focus-visible,
@@ -383,7 +382,7 @@ main {
 
 .instruction-duo ul {
     list-style-type: none;
-    padding-left: 1.5em;
+    padding-left: 1em;
 }
 
 .instruction-duo {
